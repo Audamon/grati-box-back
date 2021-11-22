@@ -7,4 +7,5 @@ How to run
 - npm i
 - npm run start:dev or npm run start:prod
 
-
+Technologies
+- Node
