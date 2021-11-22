@@ -7,7 +7,6 @@ async function getdeliverydays(req, res) {
   try {
     if (!token) return res.sendStatus(401);
     const days = await connection.query('SELECT * FROM delivery JOIN services ON delivery."idServices" = services.id WHERE services.name = $1', [plan]);
-    console.log(days.rows);
     return res.status(200).send(days.rows);
   } catch (error) {
     console.log(error);
