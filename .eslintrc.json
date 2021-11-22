@@ -20,6 +20,7 @@
            ],
            "no-console": 0,
            "eol-last":"off",
-           "no-undef":"off"
+           "no-undef":"off",
+           "max-len":"off"
     }
 }
