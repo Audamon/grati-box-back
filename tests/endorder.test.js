@@ -57,6 +57,7 @@ afterAll(async () => {
   await connection.query('DELETE FROM "userServicesProducts";');
   await connection.query('DELETE FROM "userServices";');
   await connection.query('DELETE FROM "user";');
+  await connection.query('DELETE FROM products;');
 });
 describe('end order', () => {
   test('return 401 for invalid token', async () => {
